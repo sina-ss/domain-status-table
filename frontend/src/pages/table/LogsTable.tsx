@@ -141,15 +141,17 @@ const LogsTable = () => {
       </Box>
       <Table sx={{ borderRadius: "2rem", overflow: "hidden" }}>
         <TableHead sx={{ backgroundColor: "#90290A" }}>
-          {[
-            "Date Original",
-            "Domain",
-            "Status",
-            "Description",
-            "Standard Date",
-          ].map((header) => (
-            <TableCell key={header}>{header}</TableCell>
-          ))}
+          <TableRow>
+            {[
+              "Date Original",
+              "Domain",
+              "Status",
+              "Description",
+              "Standard Date",
+            ].map((header) => (
+              <TableCell key={header}>{header}</TableCell>
+            ))}
+          </TableRow>
         </TableHead>
         <TableBody>
           {logs.map((log) => (
